@@ -58,7 +58,8 @@
       <section class="title">
         <div class="first-section container">
           <h1 class="title-header">Effective Solutions for Your Business</h1>
-          <button type="data-modal-open" class="title-button">Order Service</button>
+          <button data-modal-open 
+          class="title-button">Order Service</button>
         </div>
       </section>
       <!-- Section 2 -->
@@ -518,11 +519,11 @@
         </div>
       </div>
     </footer>
-    <div class="fon is-hidden" data-modal>
-      <div class="modalka">
-        <button class="btn_modalka" type="button" data-modal-close>
-          <svg class="modalka_close" width="8" height="8">
-            <use href="./images/icons.svg#icon-close"></use>
+    <div class="backdrop is-hidden" data-modal-open>
+      <div class="modal" data-modal>
+        <button class="modal-btn" type="button" data-modal-open="">
+          <svg class="modal-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#modal-close"></use>
           </svg>
         </button>
       </div>
