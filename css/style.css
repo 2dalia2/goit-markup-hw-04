@@ -1,4 +1,4 @@
-  :root{
+:root{
   --primaryBrand: #4D5AE5;
   --darkColor: #2E2F42;
   --successColor: #31D0AA;
@@ -59,12 +59,22 @@
 *::after {
   box-sizing: border-box;
 }
-h1, h2, h3, h4, h5, h6, ul, p, a {
-  margin: 0;
+
+a {
+ text-decoration: none;
 }
+
 ul {
   padding: 0;
+  margin: 0;
+  list-style: none;
 }
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: var(--backgroungColor);
@@ -79,6 +89,8 @@ body {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {
@@ -364,7 +376,7 @@ justify-content: center;
 .clients-list{
 display: flex;
 align-items: center;
-gap: 24px;
+gap: 24px
 }
 .clients-link {
   display: flex;
